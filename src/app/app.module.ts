@@ -19,6 +19,8 @@ import { WebviewDirective } from './directives/webview.directive';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { TestMaskComponent } from './components/test-mask/test-mask.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -29,7 +31,9 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
-    WebviewDirective
+    WebviewDirective,
+    TestMaskComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
